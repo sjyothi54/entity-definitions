@@ -78,6 +78,10 @@ synthesis:
           prefix: postgresql.
         - attribute: instrumentation.provider
           value: opentelemetry
+        - attribute: server.address
+          present: true
+        - attribute: server.port
+          present: true
       tags:
         # Environment resource attributes
         host.type:
@@ -114,6 +118,10 @@ synthesis:
           value: opentelemetry
         - attribute: db.system.name
           value: postgresql
+        - attribute: server.address
+          present: true
+        - attribute: server.port
+          present: true
       tags:
         host.type:
         cloud.provider:
@@ -149,6 +157,10 @@ synthesis:
           prefix: DbServer
         - attribute: db.system.name
           value: postgresql
+        - attribute: server.address
+          present: true
+        - attribute: server.port
+          present: true
       tags:
         namespace:
         otel.library.name:
