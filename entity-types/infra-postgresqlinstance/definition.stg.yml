@@ -18,8 +18,6 @@ synthesis:
           value: opentelemetry
         - attribute: server.address
           present: false
-        - attribute: server.port
-          present: false
       tags:
         # Environment resource attributes
         host.type:
@@ -46,8 +44,6 @@ synthesis:
         - attribute: db.system.name
           value: postgresql
         - attribute: server.address
-          present: false
-        - attribute: server.port
           present: false
       tags:
         host.type:
